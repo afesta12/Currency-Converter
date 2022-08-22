@@ -1,21 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+// Variables
+$white: rgb(244, 245, 255);
+
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+// Typography
+label {
+
+    font-weight: 700;
+    color: $white;
 
 }
 
 body {
 
+    height: 100vh;
     background-image: url("cVR2Dv.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
 }
 
 input {
 
     border: none;
-    background-image: url("cVR2Dv.jpg");
-    border-bottom: 2px solid black;
+    text-align: right;
+    padding: .5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
 
+}
+
+button {
+
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 75%;
+    align-self: center;
 }

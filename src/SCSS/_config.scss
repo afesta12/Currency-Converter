@@ -2,6 +2,12 @@
 
 // Variables
 $white: rgb(244, 245, 255);
+$dark-blue: rgb(4, 55, 242);
+$light-blue: 	rgb(125, 249, 255);
+
+$select-border: #777;
+$select-focus: blue;
+$select-arrow: $select-border;
 
 * {
 
@@ -16,7 +22,7 @@ $white: rgb(244, 245, 255);
 label {
 
     font-weight: 700;
-    color: $white;
+    color: $dark-blue;
 
 }
 
@@ -30,21 +36,41 @@ body {
 
 }
 
-input {
+.input {
 
     border: none;
     text-align: right;
     padding: .5rem;
-    border-radius: 10px;
     margin-top: 1rem;
+    background-color: transparent;
+    border-bottom: 2px solid $white;
 
 }
 
-button {
+.btn {
 
     border: none;
     border-radius: 10px;
     padding: .5rem;
     width: 75%;
     align-self: center;
+    background-color: $dark-blue;
+    color: $white;
+    font-weight: 700;
+
 }
+
+select {
+
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    
+  }

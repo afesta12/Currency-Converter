@@ -5,7 +5,7 @@ const Form = ({onInput}) => {
 
     const [num, setInput] = useState('');
     const [convertFrom, setConvertFrom] = useState('USD');
-    const [conertTo, setConvertTo] = useState('USD');
+    const [convertTo, setConvertTo] = useState('USD');
 
     const onSubmit = (e) => {
 
@@ -18,7 +18,7 @@ const Form = ({onInput}) => {
 
         }
 
-        onInput({num, convertFrom, conertTo})
+        onInput({num, convertFrom, convertTo})
     }
 
   return (
@@ -45,9 +45,13 @@ const Form = ({onInput}) => {
                     <select onChange={(e) => setConvertFrom(e.target.value)}>
             
                         <option value="USD">USD</option>
-                        <option value="Yen">Yen</option>
-                        <option value="Euro">Euro</option>
-                        <option value="Yuan">Yuan</option>
+                        <option value="JPY">JPY</option>
+                        <option value="EUR">EUR</option>
+                        <option value="CAD">CAD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="HKD">HKD</option>
                     
                     </select>
             
@@ -57,9 +61,13 @@ const Form = ({onInput}) => {
                     <select onChange={(e) => setConvertTo(e.target.value)}>
 
                         <option value="USD">USD</option>
-                        <option value="Yen">Yen</option>
-                        <option value="Euro">Euro</option>
-                        <option value="Yuan">Yuan</option>
+                        <option value="JPY">JPY</option>
+                        <option value="EUR">EUR</option>
+                        <option value="CAD">CAD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="HKD">HKD</option>
                     
                     </select>
             

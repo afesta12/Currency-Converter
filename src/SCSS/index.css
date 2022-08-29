@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 label {
@@ -13,6 +14,7 @@ label {
 
 h2 {
   font-size: 2rem;
+  color: rgb(4, 55, 242);
 }
 
 body {
@@ -59,6 +61,7 @@ select {
 
 .wrapper {
   width: 90%;
+  max-width: 400px;
   height: 95vh;
   margin: 1rem auto;
   border: 2px solid rgb(244, 245, 255);
@@ -111,4 +114,36 @@ select {
 
 .output {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: anywhere;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 90vw;
+    height: 40vh;
+    margin: 200px auto;
+    justify-content: space-between;
+  }
+  .container__input {
+    height: auto;
+  }
+  .container__bottom {
+    flex-direction: row;
+    height: auto;
+    justify-content: space-evenly;
+  }
+  .container__row {
+    align-items: flex-start;
+  }
+  .btn {
+    align-self: flex-start;
+    width: 30%;
+  }
+  .output {
+    display: inline-block;
+    text-align: right;
+  }
 }/*# sourceMappingURL=index.css.map */

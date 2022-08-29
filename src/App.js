@@ -43,7 +43,7 @@ function App() {
       <div className="wrapper">
       
         <Form onInput={getInput} />
-        <Output text={text} from={from} to={to} amount={amount} />
+        <Output text={text} to={to} />
 
       </div>
 
